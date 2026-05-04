@@ -1,0 +1,21 @@
+first_name,last_name,email,city
+john,doe,john.doe@gmail.com,Paris
+Jane,SMITH,jane.smith@gmail,paris
+alice,dupont,alice.dupont@gmail.com,lyon
+bob,Martin,bob.martin@gmail.com,
+charlie,Brown,charlie.brown@gmail.com,Marseille
+john,doe,john.doe@gmail.com,Paris
+marie,curie,marie.curie@gmail.com,PARIS
+paul, ,paul@gmail.com,Lille
+lucas,bernard,lucas.bernard@gmail,lyon
+emma,durand,emma.durand@gmail.com,lyonn
+leo,moreau,leo.moreau@gmail.com,Nice
+chloe,petit,chloe.petit@gmail.com,Marseile
+nathan,robert,nathan.robert@gmail.com,Toulouse
+manon,richard,,Bordeaux
+louis,garcia,louis.garcia@gmail.com,bordeaux
+camille,roux,camille.roux@gmail.com,Lyon
+julien,faure,julien.faure@gmail.com,Paris
+sarah,andre,sarah.andre@gmail.com,Paris
+antoine,mercier,antoine.mercier@gmail.com,Pariss
+lea,blanc,lea.blanc@gmail.com,Strasbourg
