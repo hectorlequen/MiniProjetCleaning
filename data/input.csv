@@ -1,11 +1,11 @@
 first_name,last_name,email,city
-john,doe,john.doe@gmail.com,Paris
-Jane,SMITH,jane.smith@gmail,paris
-alice,dupont,alice.dupont@gmail.com,lyon
+john,doe,joHn.doe@gmail.com,Paris
+Jane,SMITH,Jane.smith@gmail,paris
+alice,dupont,ALICE.dupont@gmail.com,lyon
 bob,Martin,bob.martin@gmail.com,
 charlie,Brown,charlie.brown@gmail.com,Marseille
 john,doe,john.doe@gmail.com,Paris
-marie,curie,marie.curie@gmail.com,PARIS
+ marie ,curie,marie.curie@gmail.com,PARIS
 paul, ,paul@gmail.com,Lille
 lucas,bernard,lucas.bernard@gmail,lyon
 emma,durand,emma.durand@gmail.com,lyonn
