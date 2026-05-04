@@ -1,10 +1,11 @@
 import pandas as pd
+from utils.cleaning import add_valid_mail_column
 
-        
     
-input_file = pd.read_csv("data/input.csv")
+df = pd.read_csv("data/input.csv")
 
-input_file.drop_duplicates(keep="first")
+df.drop_duplicates(keep="first")
+add_valid_mail_column(df)
 
-print(input_file)
+print(df)
 

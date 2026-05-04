@@ -1,3 +1,6 @@
+dnspython==2.7.0
+email-validator==2.3.0
+idna==3.13
 numpy==2.0.2
 pandas==2.3.3
 python-dateutil==2.9.0.post0
