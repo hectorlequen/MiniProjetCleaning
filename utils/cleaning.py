@@ -29,7 +29,8 @@ def add_valid_mail_column(df):
             _l.append(False)
 
     df.insert(3, "is_email_valid", _l)
-    # df_unvalid_emails = df.loc[not df["is_email_valid"]]
+    df_unvalid_emails = df.loc[~df["is_email_valid"]]
+    return df_unvalid_emails
 
 
 def remove_spaces(df):
