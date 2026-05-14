@@ -34,19 +34,21 @@ def is_valid_email(email: Any) -> bool:
     Return True if the email address is valid, otherwise False.
     """
     try:
-        validate_email(email)
+        validate_email(email, check_deliverability=False)
         return True
     except (EmailNotValidError, TypeError):
         return False
 
 
-def add_valid_mail_column(df: pd.DataFrame) -> pd.DataFrame:
+def add_valid_mail_column(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     """
     Add a boolean column indicating whether each email is valid.
     """
     df = df.copy()
     df["is_email_valid"] = df["email"].apply(is_valid_email)
-    return df
+    valid_emails_df = df.loc[df["is_email_valid"]]
+    invalid_emails_df = df.loc[~df["is_email_valid"]]
+    return valid_emails_df, invalid_emails_df
 
 
 def get_invalid_emails(df: pd.DataFrame) -> pd.DataFrame:
