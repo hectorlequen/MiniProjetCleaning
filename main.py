@@ -1,9 +1,17 @@
 import argparse
+import logging
 from pathlib import Path
 
 import pandas as pd
 
 from utils.cleaning import add_valid_mail_column, clean_data
+from utils.enrichment import add_country_column
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+logger = logging.getLogger(__name__)
 
 
 def parse_args() -> argparse.Namespace:
@@ -48,6 +56,7 @@ def main() -> None:
     df = pd.read_csv(input_path)
 
     cleaned_df = clean_data(df)
+    cleaned_df = add_country_column(cleaned_df)
     cleaned_df, invalid_emails_df = add_valid_mail_column(cleaned_df)
 
     cleaned_df.to_csv(output_path, index=False)
