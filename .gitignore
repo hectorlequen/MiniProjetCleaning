@@ -1,6 +1,20 @@
+# Python cache
 __pycache__/
 *.pyc
-.env
+
+# Virtual environments
 venv/
 .venv/
+
+# Environment variables
+.env
+
+# Tool caches
+.ruff_cache/
+.pytest_cache/
+
+# IDE
+.vscode/
+
+# Generated files
 output/
